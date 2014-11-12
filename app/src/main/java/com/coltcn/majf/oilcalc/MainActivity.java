@@ -2,23 +2,31 @@ package com.coltcn.majf.oilcalc;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.format.DateUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.coltcn.majf.oilcalc.adpater.TimeListAdpater;
 
 
 public class MainActivity extends Activity  implements Runnable{
 
-    private int[] colors = new int[]{0xffff0000,0xff00ff00,0xff0000ff,0xffff00ff,0xff00ffff};
-    private int curPointer = 0;
-    private View[] vies ;
+    private TimeListAdpater mTimeListAdpater = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+        TextView counter = (TextView) findViewById(R.id.counter);
+        counter.setText(DateUtils.formatElapsedTime(0));
+        if (mTimeListAdpater == null){
+            mTimeListAdpater = new TimeListAdpater(this,0);
+        }
+        ListView list = (ListView) findViewById(R.id.time_list);
+        list.setAdapter(mTimeListAdpater);
     }
 
 
