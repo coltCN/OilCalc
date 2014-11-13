@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/counter"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sample_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/start"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_name"
+        android:layout_marginBottom="20dp"
+        android:text="@string/task_name"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_date"
+        android:layout_marginBottom="20dp"
+        android:text="@string/date_select"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/task_desc"
+        android:layout_marginBottom="20dp"
+        android:text="@string/description"
+        android:textSize="20dp"/>
+
+</LinearLayout>
