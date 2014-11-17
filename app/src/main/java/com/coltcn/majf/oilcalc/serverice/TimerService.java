@@ -74,6 +74,10 @@ public class TimerService extends Service {
         mHandler.removeMessages(0);
         stopSelf();
         notificationManager.cancel(TIME_NOTIFICATION);
+
+        Intent intent = new Intent(MainActivity.ACTION_TIMER_STOPPED);
+        intent.putExtra("time",mTime);
+        sendBroadcast(intent);
     }
 
     public boolean isStopped(){

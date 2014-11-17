@@ -24,8 +24,9 @@ import com.coltcn.majf.oilcalc.adpater.TimeListAdpater;
 
 public class MainActivity extends Activity implements View.OnClickListener, ActionBar.TabListener {
 
-    public static final String ACTION_TIME_UPDATE = "action_time_update";
-    public static final String ACTION_TIMER_FINSHED = "action_timer_finshed";
+    public static final String ACTION_TIME_UPDATE = "com.coltcn.oilcal.ActionTimerUpdate";
+    public static final String ACTION_TIMER_FINSHED = "com.coltcn.oilcal.ActionTimerFinished";
+    public static final String ACTION_TIMER_STOPPED = "com.coltcn.oilcal.ActionTimerStopped";
     public static final int DATE_FLAGS = 0;
     private TimeListAdpater mTimeListAdpater = null;
 

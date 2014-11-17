@@ -16,9 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <!-- <receiver android:name=".TimeWidgetProvider">
-
-        </receiver>-->
+        <receiver android:name=".TimerWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.coltcn.oilcal.ActionTimerUpdate"/>
+                <action android:name="com.coltcn.oilcal.ActionTimerFinished"/>
+                <action android:name="com.coltcn.oilcal.ActionTimerStopped"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/timer_appwidget_info"/>
+        </receiver>
     </application>
 
 </manifest>
