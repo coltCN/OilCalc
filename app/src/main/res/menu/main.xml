@@ -5,4 +5,14 @@
         android:title="@string/menu_clear_all"
         android:orderInCategory="100"
         android:showAsAction="never" />
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView" />
+    <item android:id="@+id/menu_share"
+        android:title="Share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider" />
 </menu>

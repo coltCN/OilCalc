@@ -16,5 +16,8 @@
     <string name="date_select">Date Select</string>
     <string name="description">Description</string>
     <string name="finished">Done</string>
+    <string name="detail_name">Detail Name</string>
+    <string name="detail_date">Detail Date</string>
+    <string name="detail_desc">Detail Desc</string>
 
 </resources>
